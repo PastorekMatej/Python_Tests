@@ -1,0 +1,38 @@
+﻿{
+    "student_id": "YOUR_ID",
+    "name": "YOUR_NAME",
+    "language_preferences": {
+        "learning_language": "French",
+        "native_language": "English",
+        "proficiency_level": "beginner"
+    },
+    "learning_history": [
+        {
+            "session_date": "2024-04-17",
+            "duration_minutes": 30,
+            "topics_covered": [
+                "greetings",
+                "numbers"
+            ],
+            "performance_score": 85
+        },
+        {
+            "session_date": "2024-04-18",
+            "duration_minutes": 45,
+            "topics_covered": [
+                "colors",
+                "animals"
+            ],
+            "performance_score": 90
+        },
+        {
+            "session_date": "2024-04-20",
+            "duration_minutes": 45,
+            "topics_covered": [
+                "colors",
+                "animals"
+            ],
+            "performance_score": 90
+        }
+    ]
+}
