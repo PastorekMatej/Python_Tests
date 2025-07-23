@@ -10,14 +10,9 @@ def common_elements(list1:list,list2:list) ->list:
 
     Return:
     list
-"""
-    j=[]
-    for i in list1:
-            if i in list2:
-                    j.append(i)
-        
-    return j
-
+    """
+    j = []
+    return [i for i in list1 if i in list2]
 
 if __name__ == "__main__":
         print(common_elements(["1",2,3,"4"],["1","4"]))
