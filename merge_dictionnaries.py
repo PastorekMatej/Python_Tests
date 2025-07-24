@@ -1,8 +1,3 @@
-
-
-
-
-
 def merge_dictionnaries(dict1: dict, dict2: dict) -> dict:  
     """ Function to merge 2 dictionnaries
     Args
