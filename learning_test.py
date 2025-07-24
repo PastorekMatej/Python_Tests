@@ -3,6 +3,9 @@ from format_conversion import conversion
 from merge_dictionnaries import merge_dictionnaries
 from common_elements import common_elements
 from remove_duplicate import remove_duplicate
+from access_dictionnary import access_dictionnary_insurance
+from access_dictionnary import access_dictionnary_country
+import json
 
 def test_conversion():
     assert conversion("345") == 345
@@ -22,3 +25,12 @@ def test_common_elements():
 def test_remove_duplicate():
     lst = ["Matej","Matej","Jozed","Brano","Dezo","Dezo"]
     assert remove_duplicate(lst) == {'Matej','Jozed','Brano','Dezo'}
+
+
+
+with open("insurance_file.json","r") as file:
+    table = json.load(file)
+
+def test_access_dictionnary():
+    assert access_dictionnary_insurance("BMZ", table["insurance_table"]) == 9000
+    assert access_dictionnary_country("Slovakia", table["insurance_table"]) == 5000 
