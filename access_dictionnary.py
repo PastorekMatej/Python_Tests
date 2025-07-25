@@ -32,51 +32,43 @@ def  access_dictionnary_insurance(insurance:str, insurance_table:list) -> int:
 
 if __name__ == "__main__":
     insurance_table = [
-
     {
-        "country" : "Slovakia",
-        "insurance" : "BMZ",
-        "amount" : 1000
+        "country": "Slovakia",
+        "insurance": "BMZ",
+        "amount": 1000
     },
     {
-        "country" : "Slovakia",
-        "insurance" : "BMZ",
-        "amount" : 1000
+        "country": "Slovakia",
+        "insurance": "BMZ",
+        "amount": 1000
     },
     {
-        "country" : "Slovakia",
-        "insurance" : "BMZ",
-        "amount" : 1000
+        "country": "Slovakia",
+        "insurance": "BMZ",
+        "amount": 1000
     },
     {
-        "country" : "Slovakia",
-        "insurance" : "BMZ",
-        "amount" : 1000
+        "country": "Slovakia",
+        "insurance": "BMZ",
+        "amount": 1000
     },
     {
-        "country" : "Slovakia",
-        "insurance" : "BMZ",
-        "amount" : 1000
+        "country": "Slovakia",
+        "insurance": "BMZ",
+        "amount": 1000
     },
     {
-        "country" : "Italia",
-        "insurance" : "BMZ",
-        "amount" : 2000
+        "country": "Italia",
+        "insurance": "BMZ",
+        "amount": 2000
     },
     {
-        "country" : "Germany",
-        "insurance" : "BMZ",
-        "amount" : 2000
+        "country": "Germany",
+        "insurance": "BMZ",
+        "amount": 2000
     }
-                    ]
+]
 
-
-
-    # one liner solution
-    country = "Slovakia"
-    print(access_dictionnary_country(country,insurance_table))
-
-
-    # one liner solution
-    insurance = "BMZ"
-    print(access_dictionnary_insurance(insurance,insurance_table))
+    # Now let's properly access the data
+    slovakia_total = sum(record["amount"] for record in insurance_table if record["country"] == "Slovakia")
+    print(f"Total amount for Slovakia: {slovakia_total}")

@@ -1,0 +1,39 @@
+{
+    "insurance_table": [
+        {
+            "country": "Slovakia",
+            "insurance": "BMZ",
+            "amount": 1000
+        },
+        {
+            "country": "Slovakia",
+            "insurance": "BMZ",
+            "amount": 1000
+        },
+        {
+            "country": "Slovakia",
+            "insurance": "BMZ",
+            "amount": 1000
+        },
+        {
+            "country": "Slovakia",
+            "insurance": "BMZ",
+            "amount": 1000
+        },
+        {
+            "country": "Slovakia",
+            "insurance": "BMZ",
+            "amount": 1000
+        },
+        {
+            "country": "Italia",
+            "insurance": "BMZ",
+            "amount": 2000
+        },
+        {
+            "country": "Germany",
+            "insurance": "BMZ",
+            "amount": 2000
+        }
+    ]
+}
